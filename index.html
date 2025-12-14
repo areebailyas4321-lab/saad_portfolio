@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saad Rauf | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+</head>
+
+<body>
+    <div id="canvas-container"></div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#home" class="logo">Saad<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#youtube-automation">YouTube Automation</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="subtitle">Hello, I'm</span>
+                <h1>Saad Rauf</h1>
+                <h3 class="typing-text">I'm a <span class="type-effect"></span></h3>
+                <p>Creative and detail-oriented Video Editor with 2 years of experience at Stockifyy, specializing in
+                    finance content for YouTube and Instagram. Strong grip on visual storytelling, timing, transitions,
+                    and motion graphics.</p>
+                <div class="hero-btns">
+                    <a href="#contact" class="btn btn-primary">Hire Me</a>
+                    <a href="#projects" class="btn btn-secondary">View Work</a>
+                    <a href="#" onclick="openResumeModal(event)" class="btn btn-secondary">View Resume</a>
+                </div>
+                <div class="social-links">
+                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://wa.me/923165653189" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="mailto:saadrauf457@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="hero-img">
+                <div class="img-container">
+                    <img src="images/profile.jpg" alt="Saad Rauf">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Education</h2>
+                <span class="line"></span>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-logo">
+                            <img src="images/allied school.jpg" alt="Allied School Logo">
+                        </div>
+                        <h3 class="title">Matriculation</h3>
+                        <span class="place">Allied School, Morgah Campus, Rawalpindi</span>
+                        <span class="date">2018</span>
+                        <p class="description">Completed Matriculation.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-logo">
+                            <img src="images/swedish institute of technology .jpg"
+                                alt="Swedish Institute of Technology Logo">
+                        </div>
+                        <h3 class="title">Diploma of Associate Engineering (DAE) - Mechanical Technology</h3>
+                        <span class="place">Swedish Institute of Technology</span>
+                        <span class="date">2019 - 2022</span>
+                        <p class="description">Completed DAE in Mechanical Technology.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-title">
+                <h2>Experience</h2>
+                <span class="line"></span>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-logo">
+                            <img src="images/stockify .jpg" alt="Stockifyy Logo">
+                        </div>
+                        <h3 class="title">Video Editor</h3>
+                        <span class="place">Stockifyy</span>
+                        <span class="date">2 Years</span>
+                        <p class="description">Edited daily market updates and finance explainer videos for YouTube and
+                            Instagram. Created visually engaging reels and highlight clips. Applied clean transitions,
+                            motion graphics, and sound design. Collaborated with marketing team to meet tight deadlines.
+                            Increased viewer engagement by 35% through optimized edits and hooks.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-logo">
+                            <img src="images/youtube automation .jpg" alt="YouTube Automation Logo">
+                        </div>
+                        <h3 class="title">YouTube Automation</h3>
+                        <span class="place">Faceless Channels</span>
+                        <span class="date">1 Year</span>
+                        <p class="description">Created videos for faceless YouTube channels, handling script-based
+                            editing and optimization for audience retention.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-logo">
+                            <img src="images/digital_marketing.jpg" alt="Digital Marketing Logo">
+                        </div>
+                        <h3 class="title">Digital Marketing</h3>
+                        <span class="place">Azad Chai Wala Institute</span>
+                        <span class="date">Completed</span>
+                        <p class="description">Completed comprehensive training in Digital Marketing, specializing in
+                            Facebook Ads (Campaigns, Pixel, Targeting). Proficient in Google Ads (Search & Display) and
+                            SEO strategies (On-page, Technical, Content) for organic growth.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Skills</h2>
+                <span class="line"></span>
+            </div>
+            <div class="skills-container">
+                <div class="skills-column">
+                    <h3 class="skills-title">Core Skills</h3>
+                    <div class="skill-bar">
+                        <div class="info">
+                            <p>Video Editing</p>
+                            <p>95%</p>
+                        </div>
+                        <div class="bar">
+                            <span class="html"></span>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="info">
+                            <p>Photo Editing</p>
+                            <p>90%</p>
+                        </div>
+                        <div class="bar">
+                            <span class="css"></span>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="info">
+                            <p>Motion Graphics</p>
+                            <p>85%</p>
+                        </div>
+                        <div class="bar">
+                            <span class="js"></span>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="info">
+                            <p>Video Transitions & Effects</p>
+                            <p>80%</p>
+                        </div>
+                        <div class="bar">
+                            <span class="react"></span>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="info">
+                            <p>Audio Sync & Noise Reduction</p>
+                            <p>75%</p>
+                        </div>
+                        <div class="bar">
+                            <span class="php"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-column">
+                    <h3 class="skills-title">Specialized Skills</h3>
+                    <div class="skill-bar">
+                        <div class="info">
+                            <p>Stock Market & Financial Content Editing</p>
+                            <p>90%</p>
+                        </div>
+                        <div class="bar">
+                            <span class="comm"></span>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="info">
+                            <p>YouTube & Instagram Video Formats</p>
+                            <p>85%</p>
+                        </div>
+                        <div class="bar">
+                            <span class="team"></span>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="info">
+                            <p>Color Grading</p>
+                            <p>95%</p>
+                        </div>
+                        <div class="bar">
+                            <span class="problem"></span>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="info">
+                            <p>Script-based Editing</p>
+                            <p>85%</p>
+                        </div>
+                        <div class="bar">
+                            <span class="create"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Projects</h2>
+                <span class="line"></span>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img">
+                        <video src="project_videos/project1.mp4" muted playsinline loop autoplay></video>
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <h3>Daily Market Update Reel</h3>
+                                <p>Stockifyy • Clean transitions, hooks • 35% engagement uplift</p>
+                                <button class="btn btn-primary view-video-btn" data-src="project_videos/project1.mp4"
+                                    style="margin-top: 15px; padding: 8px 16px; font-size: 12px;">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img">
+                        <video src="project_videos/project2.mp4" muted playsinline loop autoplay></video>
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <h3>Finance Explainer Clip</h3>
+                                <p>Visual storytelling • Motion graphics • Script-based editing</p>
+                                <button class="btn btn-primary view-video-btn" data-src="project_videos/project2.mp4"
+                                    style="margin-top: 15px; padding: 8px 16px; font-size: 12px;">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img">
+                        <video src="project_videos/project3.mp4" muted playsinline loop autoplay></video>
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <h3>Social Campaign Highlight</h3>
+                                <p>High-impact reels • Transitions • Sound design polish</p>
+                                <button class="btn btn-primary view-video-btn" data-src="project_videos/project3.mp4"
+                                    style="margin-top: 15px; padding: 8px 16px; font-size: 12px;">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img">
+                        <video src="project_videos/project4.mp4" muted playsinline loop autoplay></video>
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <h3>Faceless YouTube Automation</h3>
+                                <p>1 year experience • Format optimization • Retention-focused hooks</p>
+                                <button class="btn btn-primary view-video-btn" data-src="project_videos/project4.mp4"
+                                    style="margin-top: 15px; padding: 8px 16px; font-size: 12px;">Watch Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="videoModal" class="video-modal">
+        <div class="modal-content">
+            <button class="modal-close"><i class="fas fa-times"></i></button>
+            <video id="modalVideo" controls></video>
+        </div>
+    </div>
+
+    <!-- Resume Modal -->
+    <div id="resumeModal" class="resume-modal">
+        <div class="resume-modal-content">
+            <div class="resume-controls">
+                <button class="btn btn-secondary" onclick="closeResumeModal()">Back</button>
+                <a href="resume/Resume.pdf" download="Saad_Rauf_Resume.pdf" class="btn btn-primary">Download</a>
+            </div>
+            <iframe src="resume/Resume.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH" class="resume-frame"></iframe>
+        </div>
+    </div>
+
+    <!-- YouTube Modal -->
+    <div id="youtubeModal" class="resume-modal">
+        <div class="resume-modal-content yt-modal-content">
+            <div class="yt-main-content">
+                <div class="resume-controls">
+                    <button class="btn btn-secondary" onclick="closeYouTubeModal()">Back</button>
+                    <a id="ytWatchBtn" href="#" target="_blank" class="btn btn-primary">Watch on YouTube</a>
+                </div>
+                <iframe id="youtubeFrame" class="resume-frame" src="" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="yt-playlist-sidebar">
+                <h3>More Videos</h3>
+                <div id="ytPlaylist" class="playlist-items">
+                    <!-- Playlist generated by JS -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- YouTube Automation Section -->
+    <section id="youtube-automation" class="youtube">
+        <div class="container">
+            <div class="section-title">
+                <h2>YouTube Automation</h2>
+                <span class="line"></span>
+            </div>
+            <div class="yt-grid" style="display: flex; justify-content: center;">
+                <div class="yt-card" onclick="openYouTubeModal('OJIoOrVoy04')" style="cursor: pointer;">
+                    <div class="yt-thumb">
+                        <img src="images/automation_thumb.webp" alt="Video Thumb">
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <i class="fas fa-play" style="font-size: 30px; color: #fff;"></i>
+                                <h3 style="color: #fff; margin-top: 10px;">Click to Watch All Projects</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <div class="section-title">
+                <h2>Certifications</h2>
+                <span class="line"></span>
+            </div>
+            <div class="cert-grid">
+                <div class="cert-card" onclick="openCertificateModal('certification/digital_marketing.jpg')">
+                    <div class="cert-thumb">
+                        <img src="certification/digital_marketing.jpg" alt="Digital Marketing Certificate">
+                    </div>
+                    <div class="cert-info">
+                        <h3>Digital Marketing — Azad Chai Wala Institute</h3>
+                    </div>
+                </div>
+                <div class="cert-card" onclick="openCertificateModal('certification/video_editing.jpg')">
+                    <div class="cert-thumb">
+                        <img src="certification/video_editing.jpg" alt="Video Editing Certificate">
+                    </div>
+                    <div class="cert-info">
+                        <h3>Video Editing — Haris Institute, Peshawar</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificate Modal -->
+    <div id="certificateModal" class="resume-modal">
+        <div class="resume-modal-content" style="height: auto; max-height: 95vh;">
+            <div class="resume-controls">
+                <button class="btn btn-secondary" onclick="closeCertificateModal()">Back</button>
+                <a id="certDownloadBtn" href="" download class="btn btn-primary">Download</a>
+            </div>
+            <div
+                style="flex: 1; overflow: auto; display: flex; justify-content: center; align-items: center; background: #f1f5f9; border-radius: 8px;">
+                <img id="certImage" src="" alt="Certificate"
+                    style="max-width: 100%; max-height: 100%; object-fit: contain;">
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Me</h2>
+                <span class="line"></span>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>0316-5653189</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>saadrauf457@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="text">
+                            <h3>Location</h3>
+                            <p>Rawalpindi, Pakistan</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-map">
+                    <iframe src="https://www.google.com/maps?q=Rawalpindi,+Pakistan&output=embed" width="100%"
+                        height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-social" style="justify-content:center;">
+                <a href="https://wa.me/923165653189" target="_blank" aria-label="WhatsApp"><i
+                        class="fab fa-whatsapp"></i></a>
+                <a href="https://www.facebook.com/share/1AHobHxUVE/" target="_blank" aria-label="Facebook"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/saad_rauf__?igsh=MTd4YW94ZmZzZHRwaw==" target="_blank"
+                    aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/saad-rauf-85362a2b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p>&copy; 2025 Saad Rauf. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
